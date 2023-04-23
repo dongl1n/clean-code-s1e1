@@ -41,10 +41,10 @@ ul {
 li, .header-block {
     list-style:none;
 }
-input,.button-edit, .todo__button-delete, .button-add{
+input,.button-edit, .button-delete, .button-add{
     outline:none;
 }
-.button-edit, .todo__button-delete, .button-add{
+.button-edit, .button-delete, .button-add{
     background: none;
     border: 0px;
     color: #888;
@@ -124,12 +124,12 @@ li > label {
 li >    input[type="text"] {
     width: 226px
 }
-.todo__button-delete img {
+.button-delete img {
     height: 2em;
     transform: rotateZ(45deg);
     transition: transform 200ms ease-in;
 }
-.todo__button-delete img:hover {
+.button-delete img:hover {
     transform: rotateZ(0);
 }
 
