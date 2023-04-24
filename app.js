@@ -127,6 +127,23 @@ var taskCompleted=function(){
 
     //Append the task list item to the #completed-tasks
     var listItem=this.parentNode;
+    listItem.className='completed__item';
+    
+    var checkbox=listItem.querySelector('.todo__checkbox');
+    checkbox.className='completed__checkbox checkbox';
+
+    var label=listItem.querySelector('.todo__task');
+    label.className='completed__task';
+
+    var input=listItem.querySelector('.todo__text');
+    input.className='completed__task';
+
+    var editButton=listItem.querySelector('.todo__button-edit');
+    editButton.className='completed__button-edit edit button-edit';
+
+    var deleteButton=listItem.querySelector('.todo__button-delete');
+    deleteButton.className='completed__button-delete button-delete';
+
     completedTasksHolder.appendChild(listItem);
     bindTaskEvents(listItem, taskIncomplete);
 
