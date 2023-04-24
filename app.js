@@ -44,7 +44,7 @@ var createNewTaskElement=function(taskString){
     checkBox.className="todo__checkbox checkbox";
 
     editInput.type="text";
-    editInput.className="todo__text text";
+    editInput.className="todo__text input-text";
 
     editButton.innerText="Edit"; //innerText encodes special characters, HTML does not.
     editButton.className="todo__button-edit edit button-edit";
@@ -136,7 +136,7 @@ var taskCompleted=function(){
     label.className='completed__task';
 
     var input=listItem.querySelector('.todo__text');
-    input.className='completed__text text';
+    input.className='completed__text input-text';
 
     var editButton=listItem.querySelector('.todo__button-edit');
     editButton.className='completed__button-edit edit button-edit';

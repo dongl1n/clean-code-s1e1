@@ -63,6 +63,7 @@ body {
     font-family: Lato, sans-serif;
     cursor: pointer;
 }
+.button-add:hover,
 .button-edit:hover {
     color: #3a3A3a;
 }
@@ -78,7 +79,7 @@ body {
     text-transform: uppercase;
 }
 .add-item__task, 
-.text {
+.input-text {
     margin: 0;
     font-size: 18px;
     line-height: 18px;
@@ -132,7 +133,7 @@ body {
     font-size: 18px;
     width: 226px;
 }
-.text {
+.input-text {
     width: 226px;
 }
 .todo__image, 
@@ -153,15 +154,15 @@ body {
 }
 
 /* Edit Task */
-.text {
+.input-text {
     display: none;
 }
 
-.edit-mode .text {
+.edit-mode .input-text {
     display: inline-block;
     width: 224px;
 }
 
-.edit-mode .text {
+.edit-mode .input-text {
     display: none;
 }
