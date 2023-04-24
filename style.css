@@ -121,7 +121,7 @@ body {
     width: 226px;
 }
 .text {
-    width: 226px
+    width: 226px;
 }
 .todo__image, .completed__image {
     height: 2em;
@@ -140,12 +140,12 @@ body {
 
 /* Edit Task */
 .text {
-    display:none
+    display:none;
 }
 
 .edit-mode .text {
     display:inline-block;
-    width:224px
+    width:224px;
 }
 
 .edit-mode .text {
