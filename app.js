@@ -51,6 +51,7 @@ var createNewTaskElement=function(taskString){
 
     deleteButton.className="todo__button-delete button-delete";
     deleteButtonImg.src='./remove.svg';
+    deleteButtonImg.className="todo__img";
     deleteButton.appendChild(deleteButtonImg);
 
 
@@ -143,6 +144,9 @@ var taskCompleted=function(){
 
     var deleteButton=listItem.querySelector('.todo__button-delete');
     deleteButton.className='completed__button-delete button-delete';
+
+    var deleteButton=listItem.querySelector('.todo__img');
+    deleteButton.className='completed__img';
 
     completedTasksHolder.appendChild(listItem);
     bindTaskEvents(listItem, taskIncomplete);

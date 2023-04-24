@@ -10,7 +10,7 @@ body {
     display: block;
     text-align: right;
 }
-.header__image {
+.header__img {
     width: 100%;
 }
 .header__more-inf {
@@ -136,14 +136,14 @@ body {
 .input-text {
     width: 226px;
 }
-.todo__image, 
-.completed__image {
+.todo__img, 
+.completed__img {
     height: 2em;
     transform: rotateZ(45deg);
     transition: transform 200ms ease-in;
 }
-.todo__image:hover, 
-.completed__image:hover {
+.todo__img:hover, 
+.completed__img:hover {
     transform: rotateZ(0);
 }
 
