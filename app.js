@@ -47,7 +47,7 @@ var createNewTaskElement=function(taskString){
     editInput.className="todo__text input-text";
 
     editButton.innerText="Edit"; //innerText encodes special characters, HTML does not.
-    editButton.className="todo__btn-edit edit btn-edit";
+    editButton.className="todo__btn-edit btn-edit";
 
     deleteButton.className="todo__btn-delete btn-delete";
     deleteButtonImg.src='./remove.svg';
@@ -91,7 +91,7 @@ var editTask=function(){
 
     var editInput=listItem.querySelector('input[type=text]');
     var label=listItem.querySelector("label");
-    var editBtn=listItem.querySelector(".edit");
+    var editBtn=listItem.querySelector(".btn-edit");
     var containsClass=listItem.classList.contains("edit-mode");
     //If class of the parent is .editmode
     if(containsClass){
@@ -140,7 +140,7 @@ var taskCompleted=function(){
     input.className='completed__text input-text';
 
     var editButton=listItem.querySelector('.todo__btn-edit');
-    editButton.className='completed__btn-edit btnn-edit';
+    editButton.className='completed__btn-edit btn-edit';
 
     var deleteButton=listItem.querySelector('.todo__btn-delete');
     deleteButton.className='completed__btn-delete btn-delete';
@@ -160,6 +160,25 @@ var taskIncomplete=function(){
     //When the checkbox is unchecked
     //Append the task list item to the #incompleteTasks.
     var listItem=this.parentNode;
+    listItem.className='todo__item';
+    
+    var checkbox=listItem.querySelector('.completed__checkbox');
+    checkbox.className='todo__checkbox checkbox';
+
+    var label=listItem.querySelector('.completed__task');
+    label.className='todo__task';
+
+    var input=listItem.querySelector('.completed__text');
+    input.className='todo__text input-text';
+
+    var editButton=listItem.querySelector('.completed__btn-edit');
+    editButton.className='todo__btn-edit btn-edit';
+
+    var deleteButton=listItem.querySelector('.completed__btn-delete');
+    deleteButton.className='todo__btn-delete btn-delete';
+
+    var deleteButton=listItem.querySelector('.completed__img');
+    deleteButton.className='todo__img';
     incompleteTaskHolder.appendChild(listItem);
     bindTaskEvents(listItem,taskCompleted);
 }

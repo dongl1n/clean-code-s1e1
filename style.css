@@ -35,7 +35,7 @@ body {
 .add-item__task-wrapper {
     display: flex;
 }
-.todo__incomplete-list, 
+.todo__list, 
 .completed__list {
     margin: 0;
     padding: 0px;
@@ -163,6 +163,7 @@ body {
     width: 224px;
 }
 
-.edit-mode .input-text {
+.edit-mode .todo__task,
+.edit-mode .completed__task {
     display: none;
 }
