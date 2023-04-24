@@ -47,14 +47,14 @@ body {
 }
 .checkbox, 
 .input-text, 
-.button-edit, 
-.button-delete, 
-.button-add {
+.btn-edit, 
+.btn-delete, 
+.btn-add {
     outline: none;
 }
-.button-edit, 
-.button-delete, 
-.button-add {
+.btn-edit, 
+.btn-delete, 
+.btn-add {
     background: none;
     border: 0px;
     color: #888;
@@ -63,8 +63,8 @@ body {
     font-family: Lato, sans-serif;
     cursor: pointer;
 }
-.button-add:hover,
-.button-edit:hover {
+.btn-add:hover,
+.btn-edit:hover {
     color: #3a3A3a;
 }
 /* Heading */
