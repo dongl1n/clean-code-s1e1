@@ -136,7 +136,7 @@ var taskCompleted=function(){
     label.className='completed__task';
 
     var input=listItem.querySelector('.todo__text');
-    input.className='completed__task';
+    input.className='completed__text text';
 
     var editButton=listItem.querySelector('.todo__button-edit');
     editButton.className='completed__button-edit edit button-edit';

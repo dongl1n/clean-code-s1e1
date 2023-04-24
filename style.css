@@ -36,25 +36,25 @@ body {
     display: flex;
 }
 .todo__incomplete-list, 
-.completed__list{
-    margin:0;
+.completed__list {
+    margin: 0;
     padding: 0px;
 }
 .todo__item, 
 .completed__item, 
 .header-block {
-    list-style:none;
+    list-style: none;
 }
 .checkbox, 
 .text, 
 .button-edit, 
 .button-delete, 
-.button-add{
-    outline:none;
+.button-add {
+    outline: none;
 }
 .button-edit, 
 .button-delete, 
-.button-add{
+.button-add {
     background: none;
     border: 0px;
     color: #888;
@@ -154,14 +154,14 @@ body {
 
 /* Edit Task */
 .text {
-    display:none;
+    display: none;
 }
 
 .edit-mode .text {
-    display:inline-block;
-    width:224px;
+    display: inline-block;
+    width: 224px;
 }
 
 .edit-mode .text {
-    display:none;
+    display: none;
 }
