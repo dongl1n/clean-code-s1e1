@@ -13,7 +13,7 @@ var taskInput=document.querySelector(".add-item__task");//Add a new task.
 //var addButton=document.getElementsByTagName("button")[0];//first button
 var addButton=document.querySelector('.btn-add');
 //var incompleteTaskHolder=document.getElementById("incompleteTasks");//ul of #incompleteTasks
-var incompleteTaskHolder=document.querySelector('.todo__incomplete-list');
+var incompleteTaskHolder=document.querySelector('.todo__list');
 //var completedTasksHolder=document.getElementById("completed-tasks");//completed-tasks
 var completedTasksHolder=document.querySelector('.completed__list');
 
